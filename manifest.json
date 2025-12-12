@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Auto YouTube Skipper",
+  "version": "1.0",
+  "description": "Automatically clicks the Skip Ad button when available.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
